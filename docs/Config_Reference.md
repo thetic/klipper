@@ -2772,6 +2772,31 @@ sensor_type: temperature_combined
 #   to combine (e.g. 5 degrees). To disable it, use a large value (e.g. 999.9)
 ```
 
+### SGP40 sensor
+
+SGP40 two wire interface (I2C) indoor air quality sensors.
+
+```
+sensor_type: SGP40
+#i2c_address: 89
+#   Default is 89 (0x59).
+#i2c_mcu:
+#i2c_bus:
+#i2c_software_scl_pin:
+#i2c_software_sda_pin:
+#i2c_speed: 100000
+#   See the "common I2C settings" section for a description of the
+#   above parameters. The default "i2c_speed" is 100000.
+#ref_temp_sensor:
+#   The name of the temperature sensor to use as reference for temperature
+#   compensation of the VOC raw measurement. If not defined calculations
+#   will assume 25 C.
+#ref_humidity_sensor:
+#   The name of the temperature sensor to use as reference for humidity
+#   compensation of the VOC raw measurement. If not defined calculations
+#   will assume 50% humidity.
+```
+
 ## Fans
 
 ### [fan]
