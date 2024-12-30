@@ -7,7 +7,7 @@
 # This file may be distributed under the terms of the GNU GPLv3 license.
 import logging
 import math
-from . import bus
+from .. import bus
 from struct import unpack_from
 from sensirion_gas_index_algorithm.voc_algorithm import VocAlgorithm
 
