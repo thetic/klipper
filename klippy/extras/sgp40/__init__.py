@@ -9,7 +9,7 @@ import logging
 import math
 from .. import bus
 from struct import unpack_from
-from sensirion_gas_index_algorithm.voc_algorithm import VocAlgorithm
+from .voc_algorithm import VOCAlgorithm
 
 SGP40_I2C_ADDR = 0x59
 SGP40_WORD_LEN = 2
@@ -38,7 +38,7 @@ class SGP40:
         self.humidity = 50
         self.sample_timer = self.reactor.register_timer(self._sample_sgp40)
 
-        self.voc_algorithm = VocAlgorithm()
+        self.voc_algorithm = VOCAlgorithm()
         self.raw = self.voc = 0.
         self.printer.add_object("sgp40 " + self.name, self)
         self.printer.register_event_handler("klippy:connect",
