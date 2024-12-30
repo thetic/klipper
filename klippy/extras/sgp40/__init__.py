@@ -2,7 +2,7 @@
 #
 # Copyright (C) 2024 Stefan Dej <meteyou@gmail.com>
 # Based on the Nevermore sgp40.py code:
-# https://github.com/nevermore3d/Nevermore_Max/blob/master/Software/Klipper/sgp40.py
+# https://github.com/nevermore3d/Nevermore_Max/
 #
 # This file may be distributed under the terms of the GNU GPLv3 license.
 import logging
